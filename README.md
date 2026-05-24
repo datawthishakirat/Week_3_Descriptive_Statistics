@@ -22,7 +22,7 @@ This analysis establishes the baseline metrics for a real estate ecosystem, iden
 
 ### 🔍 Key Findings & Metrics
 * **Market Center & Spread:** The average house price is **4,766,729.25**, with a massive standard deviation of **1,870,439.62**. This high variance mathematically confirms a strong right-hand skewness driven by premium luxury transactions pulling the market mean upward.
-* **The Market "Sweet Spot":** While exactly **11.74%** of the dataset consists of luxury outlier properties exceeding 7M, continuous normal distribution modeling establishes that there is a **37.72% probability** of a random property falling within the **3M to 5M** tier—marking this the high-volume core of the market.
+* **The Market "Sweet Spot":** While exactly **11.74%** of the dataset consists of luxury outlier properties exceeding 7M, continuous normal distribution modeling establishes that there is a **37.72% probability** of a random property falling within the **3M to 5M** tier,marking this the high-volume core of the market.
 * **Hypothesis Testing (Location Premium):** Executed a formal **Two-Sample Welch's t-Test** on property unit value (`price_per_sqft`) across location tiers (`prefarea`).
   * *Results:* $T\text{-Statistic} = 2.5183$ | $P\text{-Value} = 0.0125$
   * *Conclusion:* **Reject the Null Hypothesis.** Because $p < 0.05$, the location premium is statistically verified. Geography applies a genuine upward shift to property value.
